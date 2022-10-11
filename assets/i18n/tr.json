@@ -1,0 +1,161 @@
+{
+  "button": {
+    "cancel": "İptal",
+    "change_language": "Dili değiştir"
+  },
+  "language": {
+    "name": {
+      "en": "English",
+      "ur": "اردو",
+      "ar": "العربية",
+      "tr": "Türk"
+    },
+    "selected_message": "Şu anda seçili dil {language}",
+    "selection": {
+      "message": "Lütfen listeden bir dil seçin",
+      "title": "Dil seçimi"
+    }
+  },
+  "properties_list_page": {
+    "per_month": " /Her ay",
+    "chat": "Sohbet",
+    "call": "aramak",
+    "for_sale": "Satılık",
+    "properties": "Mülk",
+    "map_view_btn": "Harita ",
+    "filter_btn": "Filtre",
+    "sort_by": "Göre sırala",
+    "newest_to_oldest": "En Yeniden En Eskiye",
+    "oldest_to_newest": "En Eskiden En Yeniye",
+    "alphabetically_aZ": "alfabetik olarak [a-z]",
+    "alphabetically_Za": "alfabetik olarak [Z-a]"
+  },
+  "filter_page": {
+    "filters": "Filtreler",
+    "reset": "Sıfırla",
+    "search_filters": "Arama Filtreleri",
+    "near_me": "Bana yakın",
+    "radius_in_km": "KM cinsinden yarıçap",
+    "any": "Hiç",
+    "for_rent": "Kiralık",
+    "for_sale": "Satılık",
+    "keyword": "anahtar kelime",
+    "property_type": "Emlak Tipi",
+    "property_status": "Mülk Durumu",
+    "price": "Fiyat",
+    "area_size": "Alan Boyutu",
+    "location": "Konum",
+    "bedrooms": "yatak odaları",
+    "bathrooms": "banyolar",
+    "filter_by_features": "Özelliklere Göre Filtreler",
+    "24_hour_security": "24 saat güvenlik",
+    "air_conditioning": "Klima",
+    "balcony": "Balkon",
+    "central_heating": "Merkezi ısıtma",
+    "fire_alarm": "Yangın alarmı",
+    "garage": "Garaj",
+    "gym": "spor",
+    "home_theater": "Ev tiyatrosu",
+    "kitchen": "Mutfak",
+    "laundry": "Çamaşır",
+    "lawn": "Çim",
+    "refrigerator": "Buzdolabı",
+    "swimming_pool": "Yüzme havuzu",
+    "washer": "yıkayıcı",
+    "wifi": "Kablosuz internet",
+    "window_covering": "Pencere Kaplama",
+    "see_result": "Sonucu Gör"
+  },
+
+  "properties_detail_page": {
+    "bedrooms": "yatak odaları",
+    "bathrooms": "banyolar",
+    "garages": "Garajlar",
+    "per_month": " /Her ay",
+    "last_updated_on": "Son Güncelleme Tarihi: ",
+    "description": "Tanım",
+    "features": "Özellikler",
+    "details": "Detaylar",
+    "property_id": "Mülk Kimliği",
+    "property_type": "Emlak Tipi",
+    "price": "Fiyat",
+    "currency_type": "Para Birimi Türü",
+    "year_built": "Kuruluş yılı",
+    "property_size": "Mülk Boyutu",
+    "land_area": "Arazi alanı",
+    "listing_address": "Liste Adresi",
+    "state": "Durum: ",
+    "country": "Ülke: ",
+    "address": "Adres",
+    "virtual_tour": "360' Sanal Tur",
+    "whats_nearby": "Yakınlarda Neler Var",
+    "attachments": "ekler",
+    "floor_plans": "Kat planları",
+    "mortage_calculator": "Mortgage Hesaplayıcı",
+    "schedule_a_tour": "Bir Tur Planlayın",
+    "avarage_based_on": "Ortalamaya Dayalı ",
+    "rating": "Değerlendirme",
+    "contact": "İletişim",
+    "chat": "Sohbet",
+    "call": "aramak"
+  },
+  "address_page": {
+    "address": "Adres"
+  },
+  "whats_nearby_page": {
+    "whats_nearby": "Yakınlarda Ne Var",
+    "automotive": "Otomotiv",
+    "restaurants": "Restoranlar",
+    "shopping": "Alışveriş"
+  },
+  "attachments_page": {
+    "attachments": "ekler"
+  },
+  "floor_plans_page": {
+    "floor_plans": "Kat planları",
+    "rooms": "Odalar",
+    "baths": "banyolar",
+    "size": "Boyut",
+    "price": "Fiyat",
+    "per_month": " /Her ay"
+  },
+  "mortage_calculator_page": {
+    "mortage_calculator": "Mortgage Hesaplayıcı",
+    "initial_value": "Başlangıç Bdeğeri",
+    "initial_value_tooltip": "Tahmini mülk değeri veya kredi tutarı",
+    "down_payment": "Peşinat",
+    "down_payment_tooltip": "İlk ödeme döneminden önce",
+    "interest_rate": "Faiz oranı",
+    "interest_rate_tooltip": "Yüzde olarak ortalama beklenen faiz",
+    "loan_or_mortage_term": "Kredi veya İpotek Vadesi",
+    "loan_or_mortage_tooltip": "Yıllar içinde geri ödeme",
+    "generate_report": "Rapor oluştur",
+    "the_remaining_dept_is": "Kalan borç: ",
+    "the_monthly_rate_is": "Aylık oran: ",
+    "there_are": "Var: ",
+    "payment_pending": "Ödeme bekleniyor ",
+    "the_monthly_payment": "Aylık Ödeme: ",
+    "total_payment": "Toplam ödeme: ",
+    "total_interest_payment": "Toplam Faiz Ödemesi"
+  },
+  "schedule_a_tour_page": {
+    "schedule_a_tour": "Bir Tur Planlayın",
+    "date": "Tarih",
+    "time": "Zaman",
+    "your_name": "Adınız",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "your_message": "Mesajın",
+    "send_email": "Eposta gönder"
+  },
+
+  "average_based_on_page": {
+    "average_based_on": "Ortalamaya Dayalı",
+    "rating": "Değerlendirme",
+    "years_ago": "Yıllar önce",
+    "like": "Beğenmek",
+    "love": "Aşk",
+    "dislike": "Beğenmemek"
+  }
+
+}

@@ -1,0 +1,161 @@
+{
+	"button": {
+		"cancel": "يلغي",
+		"change_language": "تغيير اللغة"
+	},
+	"language": {
+		"name": {
+			"en": "English",
+			"ur": "اردو",
+			"ar": "العربية",
+			"tr": "Türk"
+		},
+		"selected_message": "اللغة المحددة حاليًا هي {language}",
+		"selection": {
+			"message": "الرجاء تحديد لغة من القائمة",
+			"title": "اختيار اللغة"
+		}
+	},
+	"properties_list_page": {
+		"per_month": " /كل شهر",
+		"chat": "دردشة",
+		"call": "مكالمة",
+		"for_sale": "للبيع",
+		"properties": "الخصائص",
+		"map_view_btn": "عرض الخريطة",
+		"filter_btn": "منقي",
+		"sort_by": "صنف حسب",
+		"newest_to_oldest": "من الأحدث إلى الأقدم",
+		"oldest_to_newest": "من الأقدم إلى الأحدث",
+		"alphabetically_aZ": "أبجديا [a-z]",
+		"alphabetically_Za": "أبجديًا [Z-a]"
+	},
+	"filter_page": {
+		"filters": "المرشحات",
+		"reset": "إعادة ضبط",
+		"search_filters": "مرشحات البحث",
+		"near_me": "بالقرب مني",
+		"radius_in_km": "نصف القطر في KM",
+		"any": "أي",
+		"for_rent": "للإيجار",
+		"for_sale": "للبيع",
+		"keyword": "الكلمة الرئيسية",
+		"property_type": "نوع الملكية",
+		"property_status": "حالة الملكية",
+		"price": "سعر",
+		"area_size": "حجم المنطقة",
+		"location": "موقع",
+		"bedrooms": "غرف نوم",
+		"bathrooms": "الحمامات",
+		"filter_by_features": "مرشحات حسب الميزات",
+		"24_hour_security": "أمن على مدار 24 ساعة",
+		"air_conditioning": "تكييف",
+		"balcony": "شرفة",
+		"central_heating": "تدفئة مركزية",
+		"fire_alarm": "إنذار حريق",
+		"garage": "كراج",
+		"gym": "نادي رياضي",
+		"home_theater": "المسرح المنزلي",
+		"kitchen": "مطبخ",
+		"laundry": "مغسلة",
+		"lawn": "العشب",
+		"refrigerator": "ثلاجة",
+		"swimming_pool": "حمام السباحة",
+		"washer": "غسالة",
+		"wifi": "واي فاي",
+		"window_covering": "تغطية النوافذ",
+		"see_result": "انظر النتيجة"
+	},
+
+	"properties_detail_page": {
+		"bedrooms": "غرف نوم",
+		"bathrooms": "الحمامات",
+		"garages": "المرائب",
+		"per_month": " /كل شهر",
+		"last_updated_on": "آخر تحديث في: ",
+		"description": "وصف",
+		"features": "سمات",
+		"details": "تفاصيل",
+		"property_id": "معرف الخاصية",
+		"property_type": "نوع الملكية",
+		"price": "سعر",
+		"currency_type": "نوع العملة",
+		"year_built": "بنيت عام",
+		"property_size": "حجم الملكية",
+		"land_area": "مساحة الأرض",
+		"listing_address": "عنوان القائمة",
+		"state": "حالة: ",
+		"country": "دولة: ",
+		"address": "تبوك",
+		"virtual_tour": "360 جولة افتراضية",
+		"whats_nearby": "ما هو قريب",
+		"attachments": "المرفقات",
+		"floor_plans": "خطط المبنى",
+		"mortage_calculator": "حاسبة الرهن",
+		"schedule_a_tour": "جدولة جولة",
+		"avarage_based_on": "متوسط على أساس ",
+		"rating": "تقييم",
+		"contact": "اتصال",
+		"chat": "دردشة",
+		"call": "مكالمة"
+	},
+	"address_page": {
+		"address": "تبوك"
+	},
+	"whats_nearby_page": {
+		"whats_nearby": "ما هو قريب",
+		"automotive": "السيارات",
+		"restaurants": "مطاعم",
+		"shopping": "التسوق"
+	},
+	"attachments_page": {
+		"attachments": "المرفقات"
+	},
+	"floor_plans_page": {
+		"floor_plans": "خطط المبنى",
+		"rooms": "غرف: ",
+		"baths": "الحمامات: ",
+		"size": "بحجم: ",
+		"price": "سعر: ",
+		"per_month": " /كل شهر"
+	},
+	"mortage_calculator_page": {
+		"mortage_calculator": "حاسبة الرهن",
+		"initial_value": "القيمة البدائية",
+		"initial_value_tooltip": "قيمة العقار المقدرة أو مبلغ القرض",
+		"down_payment": "دفعة مبدئية",
+		"down_payment_tooltip": "قبل فترة السداد الأولى",
+		"interest_rate": "سعر الفائدة",
+		"interest_rate_tooltip": "متوسط الفائدة المتوقعة بالنسبة المئوية",
+		"loan_or_mortage_term": "مدة القرض أو الرهن",
+		"loan_or_mortage_tooltip": "دفعة السداد في سنوات",
+		"generate_report": "انشاء تقرير",
+		"the_remaining_dept_is": "القسم المتبقي هو: ",
+		"the_monthly_rate_is": "السعر الشهري: ",
+		"there_are": "هناك: ",
+		"payment_pending": "انتظار الدفع",
+		"the_monthly_payment": "الدفعة الشهرية: ",
+		"total_payment": "المبلغ الإجمالي: ",
+		"total_interest_payment": "إجمالي مدفوعات الفائدة"
+	},
+	"schedule_a_tour_page": {
+		"schedule_a_tour": "جدولة جولة",
+		"date": "تاريخ",
+		"time": "زمن",
+		"your_name": "اسمك",
+		"phone": "هاتف",
+		"email": "البريد الإلكتروني",
+		"your_message": "رسالتك",
+		"send_email": "ارسل بريد الكتروني"
+	},
+
+	"average_based_on_page": {
+		"average_based_on": "متوسط على أساس",
+		"rating": "تقييم",
+		"years_ago": "مند سنوات",
+		"like": "يحب",
+		"love": "الحب",
+		"dislike": "لم يعجبنى"
+	}
+
+}

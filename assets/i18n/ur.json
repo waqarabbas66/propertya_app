@@ -1,0 +1,161 @@
+{
+  "button": {
+    "cancel": "Cancel",
+    "change_language": "Change Language"
+  },
+  "language": {
+    "name": {
+      "en": "English",
+      "ur": "اردو",
+      "ar": "العربية",
+      "tr": "Türk"
+    },
+    "selected_message": "Currently selected language is {language}",
+    "selection": {
+      "message": "Please select a language from the list",
+      "title": "Language Selection"
+    }
+  },
+  "properties_list_page": {
+    "per_month": " /Per Month",
+    "chat": "Chat",
+    "call": "Call",
+    "for_sale": "For Sale",
+    "properties": "Properties",
+    "map_view_btn": "Map View",
+    "filter_btn": "Filter",
+    "sort_by": "Sort By",
+    "newest_to_oldest": "Newest To Oldest",
+    "oldest_to_newest": "Oldest To Newest",
+    "alphabetically_aZ": "Alphabetically [a-z]",
+    "alphabetically_Za": "Alphabetically [Z-a]"
+  },
+  "filter_page": {
+    "filters": "Filters",
+    "reset": "Reset",
+    "search_filters": "Search Filters",
+    "near_me": "Near Me",
+    "radius_in_km": "Radius in KM",
+    "any": "Any",
+    "for_rent": "For Rent",
+    "for_sale": "For Sale",
+    "keyword": "Keyword",
+    "property_type": "Property Type",
+    "property_status": "Property Status",
+    "price": "Price",
+    "area_size": "Area Size",
+    "location": "Location",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "filter_by_features": "Filters By Features",
+    "24_hour_security": "24 hour security",
+    "air_conditioning": "Air Conditioning",
+    "balcony": "Balcony",
+    "central_heating": "Central Heating",
+    "fire_alarm": "Fire Alarm",
+    "garage": "Garage",
+    "gym": "Gym",
+    "home_theater": "Home Theater",
+    "kitchen": "Kitchen",
+    "laundry": "Laundry",
+    "lawn": "Lawn",
+    "refrigerator": "Refrigerator",
+    "swimming_pool": "Swimming Pool",
+    "washer": "Washer",
+    "wifi": "WiFi",
+    "window_covering": "Window Covering",
+    "see_result": "See Result"
+  },
+
+  "properties_detail_page": {
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "garages": "Garages",
+    "per_month": " /Per Month",
+    "last_updated_on": "Last Updated On: ",
+    "description": "Description",
+    "features": "Features",
+    "details": "Details",
+    "property_id": "Property ID",
+    "property_type": "Property Type",
+    "price": "Price",
+    "currency_type": "Currency Type",
+    "year_built": "Year Built",
+    "property_size": "Property Size",
+    "land_area": "Land Area",
+    "listing_address": "Listing Address",
+    "state": "State: ",
+    "country": "Country: ",
+    "address": "Address",
+    "virtual_tour": "360' Virtual Tour",
+    "whats_nearby": "What's NearBy",
+    "attachments": "Attachments",
+    "floor_plans": "Floor Plans",
+    "mortage_calculator": "Mortage Calculator",
+    "schedule_a_tour": "Schedule A Tour",
+    "avarage_based_on": "Average Based On ",
+    "rating": "Rating",
+    "contact": "Contact",
+    "chat": "Chat",
+    "call": "Call"
+  },
+  "address_page": {
+    "address": "Address"
+  },
+  "whats_nearby_page": {
+    "whats_nearby": "What's Nearby",
+    "automotive": "Automotive",
+    "restaurants": "Restaurants",
+    "shopping": "Shopping"
+  },
+  "attachments_page": {
+    "attachments": "Attachments"
+  },
+  "floor_plans_page": {
+    "floor_plans": "Floor Plans",
+    "rooms": "Rooms",
+    "baths": "Baths",
+    "size": "Size",
+    "price": "Price",
+    "per_month": " /Per Month"
+  },
+  "mortage_calculator_page": {
+    "mortage_calculator": "Mortage Calculator",
+    "initial_value": "Initial Value",
+    "initial_value_tooltip": "Estimated property value or loan amount",
+    "down_payment": "Down Payment",
+    "down_payment_tooltip": "Before the first payment period",
+    "interest_rate": "Interest Rate",
+    "interest_rate_tooltip": "The average expected interest in % percentage",
+    "loan_or_mortage_term": "Loan or Mortage Term",
+    "loan_or_mortage_tooltip": "Repayment payment in years",
+    "generate_report": "Genarate Report",
+    "the_remaining_dept_is": "The remaining dept is: ",
+    "the_monthly_rate_is": "The monthly rate is: ",
+    "there_are": "There are: ",
+    "payment_pending": "Payment Pending ",
+    "the_monthly_payment": "The Monthly Payment: ",
+    "total_payment": "Total Payment: ",
+    "total_interest_payment": "Total Interest Payment"
+  },
+  "schedule_a_tour_page": {
+    "schedule_a_tour": "Schedule A Tour",
+    "date": "Date",
+    "time": "Time",
+    "your_name": "Your Name",
+    "phone": "Phone",
+    "email": "Email",
+    "your_message": "Your Message",
+    "send_email": "Send Email"
+  },
+
+  "average_based_on_page": {
+    "average_based_on": "Average Based On",
+    "rating": "Rating",
+    "years_ago": "years ago",
+    "like": "Like",
+    "love": "Love",
+    "dislike": "Dislike"
+  }
+
+}
