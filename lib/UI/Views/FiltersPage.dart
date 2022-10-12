@@ -124,7 +124,10 @@ class _FiltersPageState extends State<FiltersPage> {
                                 children: [
                                   Row(
                                     children: [
-                                      FaIcon(FontAwesomeIcons.mapMarkedAlt, color: Color5, size: 20,),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: FaIcon(FontAwesomeIcons.mapMarkedAlt, color: Color5, size: 20,),
+                                      ),
                                       AutoSizeText(
                                         translate('filter_page.radius_in_km'),
                                         maxLines: 2,
@@ -176,7 +179,7 @@ class _FiltersPageState extends State<FiltersPage> {
                     children: [
                       SizedBox(
                         height: 36,
-                        width: 130,
+                        width: 120,
                         child: Center(
                             child: AutoSizeText(
                           translate('filter_page.any'),
@@ -186,7 +189,7 @@ class _FiltersPageState extends State<FiltersPage> {
                       ),
                       SizedBox(
                         height: 36,
-                        width: 130,
+                        width: 120,
                         child: Center(child: AutoSizeText(
                           translate('filter_page.for_rent'),
                           maxLines: 2,
@@ -194,7 +197,7 @@ class _FiltersPageState extends State<FiltersPage> {
                       ),
                       SizedBox(
                         height: 36,
-                        width: 130,
+                        width: 120,
                         child: Center(child: AutoSizeText(
                           translate('filter_page.for_sale'),
                           maxLines: 2,
@@ -231,7 +234,10 @@ class _FiltersPageState extends State<FiltersPage> {
                                 children: [
                                   Row(
                                     children: [
-                                      FaIcon(FontAwesomeIcons.search, color: Color5, size: 20,),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: FaIcon(FontAwesomeIcons.search, color: Color5, size: 20,),
+                                      ),
                                       AutoSizeText(
                                         translate('filter_page.keyword'),
                                         maxLines: 2,
@@ -291,7 +297,10 @@ class _FiltersPageState extends State<FiltersPage> {
                           padding: const EdgeInsets.only(left: 15, bottom: 10, top: 10),
                           child: Row(
                             children: [
-                              FaIcon(FontAwesomeIcons.homeAlt, color: Color5, size: 20,),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: FaIcon(FontAwesomeIcons.homeAlt, color: Color5, size: 20,),
+                              ),
                               AutoSizeText(
                                 translate('filter_page.property_type'),
                                 maxLines: 2,
@@ -365,7 +374,10 @@ class _FiltersPageState extends State<FiltersPage> {
                     padding: const EdgeInsets.only(left: 15, bottom: 10, top: 10),
                     child: Row(
                       children: [
-                        FaIcon(FontAwesomeIcons.gear, color: Color5, size: 20,),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: FaIcon(FontAwesomeIcons.gear, color: Color5, size: 20,),
+                        ),
                         AutoSizeText(
                           translate('filter_page.property_status'),
                           maxLines: 2,
@@ -408,7 +420,10 @@ class _FiltersPageState extends State<FiltersPage> {
                       children: [
                         Row(
                           children: [
-                            FaIcon(FontAwesomeIcons.tag, color: Color5, size: 20,),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: FaIcon(FontAwesomeIcons.tag, color: Color5, size: 20,),
+                            ),
                             AutoSizeText(
                               translate('filter_page.price'),
                               maxLines: 2,
@@ -528,7 +543,10 @@ class _FiltersPageState extends State<FiltersPage> {
                       children: [
                         Row(
                           children: [
-                            Icon(Icons.zoom_out_map, color: Color5, size: 20,),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Icon(Icons.zoom_out_map, color: Color5, size: 20,),
+                            ),
                             Row(
                               children: [
                                 AutoSizeText(
@@ -629,7 +647,10 @@ class _FiltersPageState extends State<FiltersPage> {
                       children: [
                         Row(
                           children: [
-                            FaIcon(FontAwesomeIcons.locationDot, color: Color5, size: 20,),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: FaIcon(FontAwesomeIcons.locationDot, color: Color5, size: 20,),
+                            ),
                             AutoSizeText(
                               translate('filter_page.location'),
                               style: TextStyle(
@@ -681,7 +702,10 @@ class _FiltersPageState extends State<FiltersPage> {
                       children: [
                         Row(
                           children: [
-                            FaIcon(FontAwesomeIcons.bed, color: Color5, size: 20,),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: FaIcon(FontAwesomeIcons.bed, color: Color5, size: 20,),
+                            ),
                             AutoSizeText(
                               translate('filter_page.bedrooms'),
                               style: TextStyle(
@@ -697,10 +721,12 @@ class _FiltersPageState extends State<FiltersPage> {
                   ),
                   SizedBox(height: 10,),
                   ToggleButtons(
-                    renderBorder: false,
+                    renderBorder: true,
                     selectedColor: Colors.white,
                     disabledColor: Colors.black,
                     highlightColor: Color1,
+                    borderColor: Colors.blue.shade200,
+
                     fillColor: Color1,
                     textStyle: const TextStyle(
                         fontWeight: FontWeight.bold, fontSize: 18),
@@ -715,27 +741,22 @@ class _FiltersPageState extends State<FiltersPage> {
                       ),
                       SizedBox(
                         height: 40,
-                        width: 55,
                         child: Center(child: Text('1+')),
                       ),
                       SizedBox(
                         height: 40,
-                        width: 65,
                         child: Center(child: Text('2+')),
                       ),
                       SizedBox(
                         height: 40,
-                        width: 65,
                         child: Center(child: Text('3+')),
                       ),
                       SizedBox(
                         height: 40,
-                        width: 65,
                         child: Center(child: Text('4+')),
                       ),
                       SizedBox(
                         height: 40,
-                        width: 65,
                         child: Center(child: Text('5+')),
                       ),
                     ],
@@ -761,7 +782,10 @@ class _FiltersPageState extends State<FiltersPage> {
                       children: [
                         Row(
                           children: [
-                            FaIcon(FontAwesomeIcons.bath, color: Color5, size: 20,),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: FaIcon(FontAwesomeIcons.bath, color: Color5, size: 20,),
+                            ),
                             AutoSizeText(
                               translate('filter_page.bathrooms'),
                               maxLines: 2,
@@ -778,10 +802,11 @@ class _FiltersPageState extends State<FiltersPage> {
                   ),
                   SizedBox(height: 10,),
                   ToggleButtons(
-                    renderBorder: false,
+                    renderBorder: true,
                     selectedColor: Colors.white,
                     disabledColor: Colors.black,
                     highlightColor: Color1,
+                    borderColor: Colors.blue.shade200,
                     fillColor: Color1,
                     textStyle: const TextStyle(
                         fontWeight: FontWeight.bold, fontSize: 18),
@@ -789,34 +814,28 @@ class _FiltersPageState extends State<FiltersPage> {
                     children: [
                       SizedBox(
                         height: 40,
-                        width: 55,
                         child: Center(child: Text(
                           translate('filter_page.any'),
                         )),
                       ),
                       SizedBox(
                         height: 40,
-                        width: 55,
                         child: Center(child: Text('1+')),
                       ),
                       SizedBox(
                         height: 40,
-                        width: 65,
                         child: Center(child: Text('2+')),
                       ),
                       SizedBox(
                         height: 40,
-                        width: 65,
                         child: Center(child: Text('3+')),
                       ),
                       SizedBox(
                         height: 40,
-                        width: 65,
                         child: Center(child: Text('4+')),
                       ),
                       SizedBox(
                         height: 40,
-                        width: 65,
                         child: Center(child: Text('5+')),
                       ),
                     ],
@@ -884,7 +903,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.24_hour_security'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -905,7 +924,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.balcony'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -926,7 +945,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.fire_alarm'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -947,7 +966,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.gym'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -968,7 +987,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.kitchen'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -989,7 +1008,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.lawn'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -1010,7 +1029,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.swimming_pool'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -1031,7 +1050,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.wifi'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -1066,7 +1085,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.air_conditioning'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -1087,7 +1106,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.central_heating'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -1108,7 +1127,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.garage'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -1129,7 +1148,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.home_theater'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -1150,7 +1169,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.laundry'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -1171,7 +1190,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.refrigerator'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -1192,7 +1211,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.washer'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),
@@ -1213,7 +1232,7 @@ class _FiltersPageState extends State<FiltersPage> {
                                       Text(
                                         translate('filter_page.window_covering'),
                                         style: TextStyle(
-                                            fontSize: 17,
+                                            fontSize: 15,
                                             color: Color2,
                                             fontWeight: FontWeight.w500
                                         ),

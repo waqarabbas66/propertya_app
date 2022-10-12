@@ -262,20 +262,20 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                     Text("50,000 ",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 22
+                      fontSize: 16
                     ),
                     ),
                     Text("Rs",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 22
+                          fontSize: 16
                       ),
                     ),
                     Text(
                       translate('properties_detail_page.per_month'),
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
-                          fontSize: 18,
+                          fontSize: 16,
                         color: Colors.grey
                       ),
                     ),
@@ -288,7 +288,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                 child: Text("Diamond Manor Apartment ",
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
-                      fontSize: 25
+                      fontSize: 20
                   ),
                 ),
               ),
@@ -303,7 +303,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                       "81-199 E Broadway, Street Haccken Town Syd",
                       style: TextStyle(
                           color: Colors.grey.shade600,
-                          fontSize: 17,
+                          fontSize: 15,
                           fontWeight: FontWeight.w400
                       ),
                     ),
@@ -319,84 +319,89 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Container(
-                        width: 130,
-                        height: 30,
-                        decoration: BoxDecoration(
-                          color: Colors.lightBlue.shade800,
-                          borderRadius: BorderRadius.circular(4)
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Reduced Price",
-                            style: TextStyle(
-                                color: Color3,
-                                fontSize: 17,
-                                fontWeight: FontWeight.bold
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(width: 7,),
-                      Container(
-                        width: 90,
-                        height: 30,
-                        decoration: BoxDecoration(
-                            color: Colors.amberAccent,
+                      Expanded(
+                        child: Container(
+                          height: 30,
+                          decoration: BoxDecoration(
+                            color: Colors.lightBlue.shade800,
                             borderRadius: BorderRadius.circular(4)
-                        ),
-                        child: Center(
-                          child: Text(
-                            "No Fees",
-                            style: TextStyle(
-                                color: Color3,
-                                fontSize: 17,
-                                fontWeight: FontWeight.bold
-                            ),
                           ),
-                        ),
-                      ),
-                      SizedBox(width: 7,),
-                      Container(
-                        width: 90,
-                        height: 30,
-                        decoration: BoxDecoration(
-                            color: Colors.red.shade900,
-                            borderRadius: BorderRadius.circular(4)
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Featured",
-                            style: TextStyle(
-                                color: Color3,
-                                fontSize: 17,
-                                fontWeight: FontWeight.bold
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(width: 7,),
-                      Container(
-                        width: 60,
-                        height: 30,
-                        decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(4)
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            FaIcon(FontAwesomeIcons.cameraAlt, color: Color3, size: 18,),
-                            SizedBox(width: 5,),
-                            Text(
-                              "2",
+                          child: Center(
+                            child: Text(
+                              "Reduced Price",
+                              maxLines: 2,
                               style: TextStyle(
                                   color: Color3,
-                                  fontSize: 20,
+                                  fontSize: 10,
                                   fontWeight: FontWeight.bold
                               ),
                             ),
-                          ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 7,),
+                      Expanded(
+                        child: Container(
+                          height: 30,
+                          decoration: BoxDecoration(
+                              color: Colors.amberAccent,
+                              borderRadius: BorderRadius.circular(4)
+                          ),
+                          child: Center(
+                            child: Text(
+                              "No Fees",
+                              style: TextStyle(
+                                  color: Color3,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 7,),
+                      Expanded(
+                        child: Container(
+                          height: 30,
+                          decoration: BoxDecoration(
+                              color: Colors.red.shade900,
+                              borderRadius: BorderRadius.circular(4)
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Featured",
+                              style: TextStyle(
+                                  color: Color3,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 7,),
+                      Expanded(
+                        child: Container(
+                          height: 30,
+                          decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(4)
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              FaIcon(FontAwesomeIcons.cameraAlt, color: Color3, size: 18,),
+                              SizedBox(width: 5,),
+                              Text(
+                                "2",
+                                style: TextStyle(
+                                    color: Color3,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],
@@ -611,7 +616,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                    Text("PT-665-AXZR",
                                      style: TextStyle(
                                          fontWeight: FontWeight.w400,
-                                         fontSize: 17,
+                                         fontSize: 15,
                                        color: Colors.grey
                                      ),
                                    ),
@@ -634,7 +639,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                         Text("50,000 Rs ",
                                           style: TextStyle(
                                               fontWeight: FontWeight.w400,
-                                              fontSize: 17,
+                                              fontSize: 15,
                                               color: Colors.grey
                                           ),
                                         ),
@@ -642,7 +647,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                           translate('properties_detail_page.per_month'),
                                           style: TextStyle(
                                               fontWeight: FontWeight.w400,
-                                              fontSize: 17,
+                                              fontSize: 15,
                                               color: Colors.grey
                                           ),
                                         ),
@@ -666,7 +671,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                     Text("04",
                                       style: TextStyle(
                                           fontWeight: FontWeight.w400,
-                                          fontSize: 17,
+                                          fontSize: 15,
                                           color: Colors.grey
                                       ),
                                     ),
@@ -687,7 +692,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                     Text("01",
                                       style: TextStyle(
                                           fontWeight: FontWeight.w400,
-                                          fontSize: 17,
+                                          fontSize: 15,
                                           color: Colors.grey
                                       ),
                                     ),
@@ -709,7 +714,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                     Text("1,800 Sq Ft",
                                       style: TextStyle(
                                           fontWeight: FontWeight.w400,
-                                          fontSize: 17,
+                                          fontSize: 15,
                                           color: Colors.grey
                                       ),
                                     ),
@@ -740,7 +745,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                   Text("Homes",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w400,
-                                        fontSize: 17,
+                                        fontSize: 15,
                                         color: Colors.grey
                                     ),
                                   ),
@@ -761,7 +766,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                   Text("PKR (Rs)",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w400,
-                                        fontSize: 17,
+                                        fontSize: 15,
                                         color: Colors.grey
                                     ),
                                   ),
@@ -782,7 +787,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                   Text("02",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w400,
-                                        fontSize: 17,
+                                        fontSize: 15,
                                         color: Colors.grey
                                     ),
                                   ),
@@ -803,7 +808,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                   Text("July 2011",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w400,
-                                        fontSize: 17,
+                                        fontSize: 15,
                                         color: Colors.grey
                                     ),
                                   ),
@@ -824,7 +829,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                   Text("1,100 Sq Ft",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w400,
-                                        fontSize: 17,
+                                        fontSize: 15,
                                         color: Colors.grey
                                     ),
                                   ),
@@ -1262,14 +1267,14 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                           SizedBox(width: 4,),
                                           Container(
                                             //color: Color1,
-                                            width: 270,
+                                            width: 220,
                                             child: Text(
                                               "81-199 E Broadway, Street Haccken Town Syd",
                                               overflow: TextOverflow.ellipsis,
-                                              maxLines: 2,
+                                              maxLines: 1,
                                               style: TextStyle(
                                                   color: Color2,
-                                                  fontSize: 17,
+                                                  fontSize: 15,
                                                   fontWeight: FontWeight.w400
                                               ),
                                             ),
@@ -1284,7 +1289,7 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                                             "george@gmail.com",
                                             style: TextStyle(
                                                 color: Color2,
-                                                fontSize: 17,
+                                                fontSize: 15,
                                                 fontWeight: FontWeight.w400
                                             ),
                                           ),
@@ -1349,56 +1354,59 @@ class _PropertiesDetailPageState extends State<PropertiesDetailPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                   Padding(
-                     padding: const EdgeInsets.all(8.0),
-                     child: Container(
-                       width: 180,
-                       height: 40,
-                       decoration: BoxDecoration(
-                           borderRadius: BorderRadius.circular(4),
-                           border: Border.all(color: Color4)
-                       ),
-                         child: Row(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children: [
-                             Icon(Icons.whatsapp, color: Color4, size: 22, ),
-                             SizedBox(width: 4,),
-                             Text(
-                               translate('properties_detail_page.chat'),
-                               style: TextStyle(
-                                   color: Color4,
-                                   fontSize: 20,
-                                   fontWeight: FontWeight.w500
-                               ),
-                             )
-
-                           ],
+                   Expanded(
+                     child: Padding(
+                       padding: const EdgeInsets.all(8.0),
+                       child: Container(
+                         height: 40,
+                         decoration: BoxDecoration(
+                             borderRadius: BorderRadius.circular(4),
+                             border: Border.all(color: Color4)
                          ),
+                           child: Row(
+                             mainAxisAlignment: MainAxisAlignment.center,
+                             children: [
+                               Icon(Icons.whatsapp, color: Color4, size: 22, ),
+                               SizedBox(width: 4,),
+                               Text(
+                                 translate('properties_detail_page.chat'),
+                                 style: TextStyle(
+                                     color: Color4,
+                                     fontSize: 20,
+                                     fontWeight: FontWeight.w500
+                                 ),
+                               )
+
+                             ],
+                           ),
+                       ),
                      ),
                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 180,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          color: Color1,
-                          borderRadius: BorderRadius.circular(2),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.phone_in_talk, color: Color3, size: 18, ),
-                            SizedBox(width: 4,),
-                            Text(
-                              translate('properties_detail_page.call'),
-                              style: TextStyle(
-                                  color: Color3,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w500
-                              ),
-                            )
-                          ],
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+
+                          height: 40,
+                          decoration: BoxDecoration(
+                            color: Color1,
+                            borderRadius: BorderRadius.circular(2),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.phone_in_talk, color: Color3, size: 18, ),
+                              SizedBox(width: 4,),
+                              Text(
+                                translate('properties_detail_page.call'),
+                                style: TextStyle(
+                                    color: Color3,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w500
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),

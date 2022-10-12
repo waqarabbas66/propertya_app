@@ -14,10 +14,10 @@ class MortageCalculatorPage extends StatefulWidget {
 }
 
 class _MortageCalculatorPageState extends State<MortageCalculatorPage> {
-  final GlobalKey<TooltipState> tooltipkey1 = GlobalKey<TooltipState>();
-  final GlobalKey<TooltipState> tooltipkey2 = GlobalKey<TooltipState>();
-  final GlobalKey<TooltipState> tooltipkey3 = GlobalKey<TooltipState>();
-  final GlobalKey<TooltipState> tooltipkey4 = GlobalKey<TooltipState>();
+  // final GlobalKey<TooltipState> tooltipkey1 = GlobalKey<TooltipState>();
+  // final GlobalKey<TooltipState> tooltipkey2 = GlobalKey<TooltipState>();
+  // final GlobalKey<TooltipState> tooltipkey3 = GlobalKey<TooltipState>();
+  // final GlobalKey<TooltipState> tooltipkey4 = GlobalKey<TooltipState>();
   int _selectedFruit = 0;
   double _kItemExtent = 32.0;
   List<String> _fruitNames = <String>[
@@ -81,7 +81,6 @@ class _MortageCalculatorPageState extends State<MortageCalculatorPage> {
                     Tooltip(
                       // Provide a global key with the "TooltipState" type to show
                       // the tooltip manually when trigger mode is set to manual.
-                      key: tooltipkey1,
                       triggerMode: TooltipTriggerMode.tap,
                       showDuration: const Duration(seconds: 2),
                       message:
@@ -152,7 +151,6 @@ class _MortageCalculatorPageState extends State<MortageCalculatorPage> {
                     Tooltip(
                       // Provide a global key with the "TooltipState" type to show
                       // the tooltip manually when trigger mode is set to manual.
-                      key: tooltipkey2,
                       triggerMode: TooltipTriggerMode.tap,
                       showDuration: const Duration(seconds: 2),
                       message:
@@ -222,7 +220,6 @@ class _MortageCalculatorPageState extends State<MortageCalculatorPage> {
                     Tooltip(
                       // Provide a global key with the "TooltipState" type to show
                       // the tooltip manually when trigger mode is set to manual.
-                      key: tooltipkey3,
                       triggerMode: TooltipTriggerMode.tap,
                       showDuration: const Duration(seconds: 2),
                       message:
@@ -329,7 +326,6 @@ class _MortageCalculatorPageState extends State<MortageCalculatorPage> {
                     Tooltip(
                       // Provide a global key with the "TooltipState" type to show
                       // the tooltip manually when trigger mode is set to manual.
-                      key: tooltipkey4,
                       triggerMode: TooltipTriggerMode.tap,
                       showDuration: const Duration(seconds: 2),
                       message:

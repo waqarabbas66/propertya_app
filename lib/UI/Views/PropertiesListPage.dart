@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -25,71 +27,40 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(90),
-        child: AppBar(
-          iconTheme: IconThemeData(color: Color3),
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                height: 40,
-                width: 40,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage("assets/logo.png")
-                  )
-                ),
-              ),
-              SizedBox(width: 5,),
-              AutoSizeText("PROPERTYA",
-                maxLines: 2,
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold
-                ),
-              ),
-            ],
-          ),
-          backgroundColor: Colors.white,
-          centerTitle: true,
-          elevation: 1,
-          actions: [
-            InkWell(
-                onTap: (){
-                  onActionSheetPress(context);
-                },
-                child: FaIcon(FontAwesomeIcons.language, color: Color1, size: 45,)
-            )
-          ],
-          flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 77.0, left: 10, right: 10, bottom: 5),
+      appBar:AppBar(
+        iconTheme: IconThemeData(color: Color3),
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(40),
+          child: Padding(
+            padding: const EdgeInsets.only(top: 10.0, left: 10, right: 10, bottom: 5),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
-                  children: [
-                    AutoSizeText("41 ",
-                      maxLines: 2,
-                      style: TextStyle(
-                          color: Color1,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20
-                      ),
-                    ),
-                    AutoSizeText(
-                      translate('properties_list_page.properties'),
-                      maxLines: 2,
-                      style: TextStyle(
-                          color: Color1,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20
-                      ),
-                    ),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(right: 8.0),
+                  child: SizedBox( width:90,child: AutoSizeText("${"41 " + translate("properties_list_page.properties")}",maxLines: 1,minFontSize: 15,maxFontSize: 22,style: TextStyle(color: Color1),)),
                 ),
+                // Row(
+                //   children: [
+                //     AutoSizeText("41 ",
+                //       maxLines: 2,
+                //       style: TextStyle(
+                //           color: Color1,
+                //           fontWeight: FontWeight.w500,
+                //           fontSize: 20
+                //       ),
+                //     ),
+                //     AutoSizeText(
+                //       translate('properties_list_page.properties'),
+                //       maxLines: 2,
+                //       style: TextStyle(
+                //           color: Color1,
+                //           fontWeight: FontWeight.w500,
+                //           fontSize: 20
+                //       ),
+                //     ),
+                //   ],
+                // ),
                 Row(
                   children: [
                     InkWell(
@@ -97,28 +68,33 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=> MapScreen()));
                       },
                       child: Container(
-                        width: 140,
-                        height: 40,
+                        width: 100,
+                        height: LocalizedApp.of(context).delegate.currentLocale.languageCode=="ar"?28:26,
                         decoration: BoxDecoration(
                           color: Color3,
                           borderRadius: BorderRadius.circular(2),
                           border: Border.all(color: Colors.lightBlue.shade200, width: 0.75),
                         ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            FaIcon(FontAwesomeIcons.mapMarkedAlt, color: Color1,),
-                            SizedBox(width: 4,),
-                            AutoSizeText(
-                              translate('properties_list_page.map_view_btn'),
-                              maxLines: 2,
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Color2,
-                              fontWeight: FontWeight.w500
-                            ),
-                            ),
-                          ],
+                        child: Padding(
+                          padding: const EdgeInsets.all(3.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(2.0),
+                                child: FaIcon(FontAwesomeIcons.mapMarkedAlt, color: Color1,size: 15),
+                              ),
+                              AutoSizeText(
+                                translate('properties_list_page.map_view_btn'),
+                                maxLines: 1,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: Color2,
+                                    fontWeight: FontWeight.w500
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -219,14 +195,14 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                         );
                       },
                       child: Container(
-                        width: 35,
-                        height: 35,
-                        decoration: BoxDecoration(
-                          color: Color3,
-                          borderRadius: BorderRadius.circular(2),
-                          border: Border.all(color: Colors.lightBlue.shade200, width: 0.75),
-                        ),
-                        child:  Center(child: FaIcon(FontAwesomeIcons.listDots, size: 15,))
+                          width: 35,
+                          height: 26,
+                          decoration: BoxDecoration(
+                            color: Color3,
+                            borderRadius: BorderRadius.circular(2),
+                            border: Border.all(color: Colors.lightBlue.shade200, width: 0.75),
+                          ),
+                          child:  Center(child: FaIcon(FontAwesomeIcons.listDots, size: 15,))
                       ),
                     ),
                     SizedBox(width: 5,),
@@ -236,7 +212,7 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                       },
                       child: Container(
                         width: 70,
-                        height: 45,
+                        height: 26,
                         decoration: BoxDecoration(
                           color: Color1,
                           borderRadius: BorderRadius.circular(2),
@@ -244,7 +220,7 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                         child: Center(
                           child: AutoSizeText(
                             translate('properties_list_page.filter_btn'),
-                            maxLines: 2,
+                            maxLines: 1,
                             style: TextStyle(
                                 fontSize: 17,
                                 color: Color3,
@@ -259,8 +235,50 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
               ],
             ),
           ),
+          // child:
         ),
-      ),
+        title: Padding(
+          padding: const EdgeInsets.only(top: 8.0),
+          child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+          Container(
+            height: 40,
+            width: 40,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage("assets/logo.png")
+                )
+            ),
+          ),
+          SizedBox(width: 5,),
+          AutoSizeText("PROPERTYA",
+            maxLines: 1,
+            style: TextStyle(
+                color: Colors.black,
+                fontSize: 20,
+                fontWeight: FontWeight.bold
+            ),
+          ),
+      ],
+    ),
+        ),
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        elevation: 1,
+        actions: [
+          InkWell(
+              onTap: (){
+                onActionSheetPress(context);
+              },
+              child: Padding(
+                padding:LocalizedApp.of(context).delegate.currentLocale.languageCode!="ar"?const EdgeInsets.only(top: 8,right: 16):const EdgeInsets.only(top: 8,left: 16),
+                child: FaIcon(FontAwesomeIcons.language, color: Color1, size: 45,),
+              )
+          )
+        ],
+      ) ,
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -274,7 +292,7 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: 220,
+                height: 150,
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.blue.shade100),
                   borderRadius: BorderRadius.circular(6),
@@ -283,73 +301,70 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                   children: [
                     Container(
                       height: MediaQuery.of(context).size.height,
-                      width: 160,
+                      width: 120,
                       //: Color4,
                       child: Column(
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 15, bottom: 15),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 185,
-                             decoration: BoxDecoration(
-                               image: DecorationImage(
-                                 fit: BoxFit.cover,
-                                 image: AssetImage("assets/drawingroom.jpg")
-                               )
-                             ),
-                              child: Padding(
-                                padding: const EdgeInsets.only(left: 7.0, top: 7, bottom: 7),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    RotatedBox(
-                                      quarterTurns: 1,
-                                      child: ClipPath(
-                                        clipper: ArcClipper(),
-                                        child: Container(
-                                            width: 40.0,
-                                            height: 30.0,
-                                            padding: EdgeInsets.all(8.0),
-                                            color: Colors.red.shade500,
-                                            child: Center(
-                                                child: RotationTransition(
-                                                turns: new AlwaysStoppedAnimation(55 / 360),
-                                                  child: Padding(
-                                                    padding: const EdgeInsets.only(bottom: 10),
-                                                    child: FaIcon(
-                                                      FontAwesomeIcons.solidStar,
-                                                      color: Color3,
-                                                      size: 15,
-                                                    ),
+                          Container(
+                            width: MediaQuery.of(context).size.width,
+                            height: 148,
+                           decoration: BoxDecoration(
+                             image: DecorationImage(
+                               fit: BoxFit.cover,
+                               image: AssetImage("assets/drawingroom.jpg")
+                             )
+                           ),
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 7.0, top: 7, bottom: 7),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  RotatedBox(
+                                    quarterTurns: 1,
+                                    child: ClipPath(
+                                      clipper: ArcClipper(),
+                                      child: Container(
+                                          width: 40.0,
+                                          height: 25.0,
+                                          padding: EdgeInsets.all(6.0),
+                                          color: Colors.red.shade500,
+                                          child: Center(
+                                              child: RotationTransition(
+                                              turns: new AlwaysStoppedAnimation(55 / 360),
+                                                child: Padding(
+                                                  padding: const EdgeInsets.only(bottom: 10),
+                                                  child: FaIcon(
+                                                    FontAwesomeIcons.solidStar,
+                                                    color: Color3,
+                                                    size: 15,
                                                   ),
-                                                )
-                                            ),
-                                      ),
-                                    ),
-                                    ) ,
-                                    Container(
-                                      width: 110,
-                                      height: 30,
-                                      decoration: BoxDecoration(
-                                        color: Colors.lightGreenAccent.shade700,
-                                        borderRadius: BorderRadius.circular(4)
-                                      ),
-                                      child: Center(
-                                        child: AutoSizeText(
-                                            translate('properties_list_page.for_sale'),
-                                          maxLines: 2,
-                                          style: TextStyle(
-                                            color: Color3,
-                                            fontSize: 17,
-                                            fontWeight: FontWeight.w500
+                                                ),
+                                              )
                                           ),
+                                    ),
+                                  ),
+                                  ) ,
+                                  Container(
+                                    height: 30,
+                                    decoration: BoxDecoration(
+                                      color: Colors.lightGreenAccent.shade700,
+                                      borderRadius: BorderRadius.circular(4)
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: AutoSizeText(
+                                          translate('properties_list_page.for_sale'),
+                                        maxLines: 1,
+                                        style: TextStyle(
+                                          color: Color3,
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w500
                                         ),
                                       ),
-                                    )
-                                  ],
-                                ),
+                                    ),
+                                  )
+                                ],
                               ),
                             ),
                           )
@@ -372,10 +387,10 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                                    Row(
                                      children: [
                                        AutoSizeText("50,000 Rs",
-                                         maxLines: 2,
+                                         maxLines: 1,
                                          style: TextStyle(
                                              color: Color1,
-                                             fontSize: 20,
+                                             fontSize: 15,
                                              fontWeight: FontWeight.w500
                                          ),),
                                        AutoSizeText(
@@ -383,7 +398,7 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                                          maxLines: 2,
                                          style: TextStyle(
                                              color: Color2,
-                                             fontSize: 17,
+                                             fontSize: 15,
                                              fontWeight: FontWeight.w500
                                          ),
                                        )
@@ -391,21 +406,22 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                                    ),
                                    InkWell(
                                      onTap: (){
+
                                      },
                                        child: Icon(isFavourite==true?Icons.favorite:Icons.favorite_border,size: 25,color: Colors.black,)
                                    ),
                                  ],
                                ),
-                                 SizedBox(height: 5,),
+                                 // SizedBox(height: 5,),
                                  Container(
                                    //color: Color1,
-                                  width: 230,
+                                  width: 200,
                                   child: AutoSizeText(
                                     "Diamond Manor Apartment",
                                     overflow: TextOverflow.ellipsis,
-                                    maxLines: 2,
+                                    maxLines: 1,
                                     style: TextStyle(
-                                      fontSize: 23,
+                                      fontSize: 18,
                                       fontWeight: FontWeight.w400
                                     ),
                                   ),
@@ -417,11 +433,11 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                                     SizedBox(width: 4,),
                                     Container(
                                       //color: Color1,
-                                      width: 180,
+                                      width: 160,
                                       child: AutoSizeText(
                                         "81-199 E Broadway, Street Haccken Town Syd",
                                         overflow: TextOverflow.ellipsis,
-                                        maxLines: 2,
+                                        maxLines: 1,
                                         style: TextStyle(
                                           color: Colors.grey.shade600,
                                             fontSize: 17,
@@ -433,16 +449,16 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                                 ),
                                 SizedBox(height: 7,),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Row(
                                       children: [
                                         Icon(Icons.bed, color: Color1, size: 20,),
-                                        SizedBox(width: 2,),
+                                        SizedBox(width: 5,),
                                         AutoSizeText("03",
                                           style: TextStyle(
                                               color: Colors.grey.shade600,
-                                              fontSize: 18,
+                                              fontSize: 16,
                                               fontWeight: FontWeight.w400
                                           ),
                                         )
@@ -451,11 +467,11 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                                     Row(
                                       children: [
                                         FaIcon(FontAwesomeIcons.bath, color: Color1, size: 15,),
-                                        SizedBox(width: 2,),
+                                        SizedBox(width: 5,),
                                         AutoSizeText("03",
                                           style: TextStyle(
                                               color: Colors.grey.shade600,
-                                              fontSize: 18,
+                                              fontSize: 16,
                                               fontWeight: FontWeight.w400
                                           ),
                                         )
@@ -464,12 +480,12 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                                     Row(
                                       children: [
                                         Icon(Icons.zoom_out_map, color: Color1, size: 20,),
-                                        SizedBox(width: 2,),
+                                        SizedBox(width: 5,),
                                         AutoSizeText(
-                                          "2,400 Sq Ft.   ",
+                                          "2,400 Sq Ft.",
                                           style: TextStyle(
                                               color: Colors.grey.shade600,
-                                              fontSize: 18,
+                                              fontSize: 14,
                                               fontWeight: FontWeight.w400
                                           ),
                                         )
@@ -481,56 +497,62 @@ class _PropertiesListPageState extends State<PropertiesListPage> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Container(
-                                      width: 100,
-                                      height:30,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(2),
-                                        border: Border.all(color: Color4)
-                                      ),
-                                      child: Center(
-                                        child: Row(
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          children: [
-                                            Icon(Icons.whatsapp, color: Color4, size: 22, ),
-                                            SizedBox(width: 4,),
-                                            AutoSizeText(
-                                              translate('properties_list_page.chat'),
-                                              style: TextStyle(
-                                                  color: Color4,
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.w500
-                                              ),
-                                            )
-                                          ],
+                                    Expanded(
+                                      child: Padding(
+                                        padding:  LocalizedApp.of(context).delegate.currentLocale.languageCode=="ar"?EdgeInsets.only(left: 8.0):EdgeInsets.only(right: 8.0),
+                                        child: Container(
+                                          height:30,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(2),
+                                            border: Border.all(color: Color4)
+                                          ),
+                                          child: Center(
+                                            child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.center,
+                                              children: [
+                                                Icon(Icons.whatsapp, color: Color4, size: 22, ),
+                                                SizedBox(width: 4,),
+                                                AutoSizeText(
+                                                  translate('properties_list_page.chat'),
+                                                  style: TextStyle(
+                                                      color: Color4,
+                                                      fontSize: 18,
+                                                      fontWeight: FontWeight.w500
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
-                                    Container(
-                                      width: 100,
-                                      height:30,
-                                      decoration: BoxDecoration(
-                                        color: Color1,
-                                          borderRadius: BorderRadius.circular(2),
+                                    Expanded(
+                                      child: Container(
+                                        
+                                        height:31,
+                                        decoration: BoxDecoration(
+                                          color: Color1,
+                                            borderRadius: BorderRadius.circular(2),
 
-                                      ),
-                                      child: Center(
-                                        child: Row(
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          children: [
-                                            Icon(Icons.phone_in_talk, color: Color3, size: 18, ),
-                                            SizedBox(width: 4,),
-                                            AutoSizeText(
-                                                translate('properties_list_page.call'),
-                                              maxLines: 2,
-                                              style: TextStyle(
-                                                  color: Color3,
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.w500
-                                              ),
-                                            )
+                                        ),
+                                        child: Center(
+                                          child: Row(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Icon(Icons.phone_in_talk, color: Color3, size: 18, ),
+                                              SizedBox(width: 4,),
+                                              AutoSizeText(
+                                                  translate('properties_list_page.call'),
+                                                maxLines: 2,
+                                                style: TextStyle(
+                                                    color: Color3,
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.w500
+                                                ),
+                                              )
 
-                                          ],
+                                            ],
+                                          ),
                                         ),
                                       ),
                                     )

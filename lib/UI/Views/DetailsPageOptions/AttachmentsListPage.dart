@@ -47,9 +47,9 @@ class _AttachmentsListPageState extends State<AttachmentsListPage> {
                     ),
                   ),
                   title: AutoSizeText("Home-Attachment-Report",
-                    maxLines: 2,
+                    maxLines: 1,
                     style: TextStyle(
-                        fontSize: 23,
+                        fontSize: 20,
                         fontWeight: FontWeight.w400
                     ),
                   ),

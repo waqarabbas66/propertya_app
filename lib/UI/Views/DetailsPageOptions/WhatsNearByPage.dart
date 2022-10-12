@@ -74,7 +74,7 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                          title: Text("Ludlow Garage",
                            maxLines: 2,
                            style: TextStyle(
-                               fontSize: 21,
+                               fontSize: 18,
                                fontWeight: FontWeight.bold
                            ),
                          ),
@@ -113,9 +113,9 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                            // },
                          ),
                          title: Text("Champion Automotive Repair Service",
-                           maxLines: 2,
+                           maxLines: 1,
                            style: TextStyle(
-                               fontSize: 21,
+                               fontSize: 18,
                                fontWeight: FontWeight.bold
                            ),
                          ),
@@ -154,9 +154,9 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                            // },
                          ),
                          title: Text("Bridgeview Auto Services Center",
-                           maxLines: 2,
+                           maxLines: 1,
                            style: TextStyle(
-                               fontSize: 21,
+                               fontSize: 18,
                                fontWeight: FontWeight.bold
                            ),
                          ),
@@ -196,7 +196,7 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                          ),
                          title: Text("CARU",
                            style: TextStyle(
-                               fontSize: 21,
+                               fontSize: 18,
                                fontWeight: FontWeight.bold
                            ),
                          ),
@@ -256,9 +256,9 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                             // },
                           ),
                           title: Text("Da Andrea",
-                            maxLines: 2,
+                            maxLines: 1,
                             style: TextStyle(
-                                fontSize: 21,
+                                fontSize: 18,
                                 fontWeight: FontWeight.bold
                             ),
                           ),
@@ -297,9 +297,9 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                             // },
                           ),
                           title: Text("Jack's Wife Freda",
-                            maxLines: 2,
+                            maxLines: 1,
                             style: TextStyle(
-                                fontSize: 21,
+                                fontSize: 18,
                                 fontWeight: FontWeight.bold
                             ),
                           ),
@@ -338,9 +338,9 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                             // },
                           ),
                           title: Text("Rubirosa",
-                            maxLines: 2,
+                            maxLines: 1,
                             style: TextStyle(
-                                fontSize: 21,
+                                fontSize: 18,
                                 fontWeight: FontWeight.bold
                             ),
                           ),
@@ -380,7 +380,7 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                           ),
                           title: Text("Jane Restaurant",
                             style: TextStyle(
-                                fontSize: 21,
+                                fontSize: 18,
                                 fontWeight: FontWeight.bold
                             ),
                           ),
@@ -440,9 +440,9 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                             // },
                           ),
                           title: AutoSizeText("Shein Pop Up Store",
-                            maxLines: 2,
+                            maxLines: 1,
                             style: TextStyle(
-                                fontSize: 21,
+                                fontSize: 18,
                                 fontWeight: FontWeight.bold
                             ),
                           ),
@@ -481,9 +481,9 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                             // },
                           ),
                           title: AutoSizeText("Chelsea Market",
-                            maxLines: 2,
+                            maxLines: 1,
                             style: TextStyle(
-                                fontSize: 21,
+                                fontSize: 18,
                                 fontWeight: FontWeight.bold
                             ),
                           ),
@@ -522,9 +522,9 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                             // },
                           ),
                           title: AutoSizeText("Dumbo Flea",
-                            maxLines: 2,
+                            maxLines: 1,
                             style: TextStyle(
-                                fontSize: 21,
+                                fontSize: 18,
                                 fontWeight: FontWeight.bold
                             ),
                           ),
@@ -564,7 +564,7 @@ class _WhatsNearByPageState extends State<WhatsNearByPage> {
                           ),
                           title: AutoSizeText("Catbird",
                             style: TextStyle(
-                                fontSize: 21,
+                                fontSize: 18,
                                 fontWeight: FontWeight.bold
                             ),
                           ),

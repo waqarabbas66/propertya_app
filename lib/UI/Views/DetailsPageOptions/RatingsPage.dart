@@ -25,33 +25,33 @@ class _RatingsPageState extends State<RatingsPage> {
             child: Row(
               children: [
                 Text("5.0 ",
-                  maxLines: 2,
+                  maxLines: 1,
                   style: TextStyle(
                       color: Color2,
-                      fontSize: 20
+                      fontSize: 18
                   ),
                 ),
                 Text(
                   translate('average_based_on_page.average_based_on'),
-                  maxLines: 2,
+                  maxLines: 1,
                   style: TextStyle(
                       color: Color2,
-                      fontSize: 20
+                      fontSize: 18
                   ),
                 ),
                 Text(" 1 ",
-                  maxLines: 2,
+                  maxLines: 1,
                   style: TextStyle(
                       color: Color2,
-                      fontSize: 20
+                      fontSize: 18
                   ),
                 ),
                 Text(
                   translate('average_based_on_page.rating'),
-                  maxLines: 2,
+                  maxLines: 1,
                   style: TextStyle(
                       color: Color2,
-                      fontSize: 20
+                      fontSize: 18
                   ),
                 ),
               ],
@@ -82,8 +82,8 @@ class _RatingsPageState extends State<RatingsPage> {
                     child: Row(
                       children: [
                         Container(
-                          width: 80,
-                          height: 80,
+                          width: 60,
+                          height: 60,
                           decoration: BoxDecoration(
                               color: Color1,
                               borderRadius: BorderRadius.circular(150),
@@ -115,10 +115,10 @@ class _RatingsPageState extends State<RatingsPage> {
                                            children: [
                                              AutoSizeText(
                                                "Alizey Jack",
-                                               maxLines: 2,
+                                               maxLines: 1,
                                                style: TextStyle(
                                                    color: Color2,
-                                                   fontSize: 20,
+                                                   fontSize: 15,
                                                    fontWeight: FontWeight.w400
                                                ),
                                              ),
@@ -126,25 +126,25 @@ class _RatingsPageState extends State<RatingsPage> {
                                                mainAxisAlignment: MainAxisAlignment.start,
                                                crossAxisAlignment: CrossAxisAlignment.start,
                                                children: [
-                                                 Icon(Icons.access_time, color: Color2, size: 18,),
+                                                 Icon(Icons.access_time, color: Color2, size: 14,),
                                                  SizedBox(width: 5,),
                                                  Row(
                                                    children: [
                                                      AutoSizeText(
                                                        "2 ",
-                                                       maxLines: 2,
+                                                       maxLines: 1,
                                                        style: TextStyle(
                                                            color: Color5,
-                                                           fontSize: 17,
+                                                           fontSize: 13,
                                                            fontWeight: FontWeight.w400
                                                        ),
                                                      ),
                                                      AutoSizeText(
                                                        translate('average_based_on_page.years_ago'),
-                                                       maxLines: 2,
+                                                       maxLines: 1,
                                                        style: TextStyle(
                                                            color: Color5,
-                                                           fontSize: 17,
+                                                           fontSize: 13,
                                                            fontWeight: FontWeight.w400
                                                        ),
                                                      ),
